@@ -93,6 +93,7 @@ $("#journey-bottom").owlCarousel({
   margin: 10,
   nav: false,
   dot: true,
+  center: true,
   responsive: {
     0: {
       items: 1,
