@@ -6,22 +6,28 @@
 }
 @font-face {
   font-family: "Gotham-Bold";
-  src: url("../fonts/GothamBold.ttf");
+  src: url("../fonts/GothamBold.ttf") format("truetype"), url("../fonts/GothamBold.woff") format("woff"), url("../fonts/GothamBold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Gotham-Book";
-  src: url("../fonts/GothamBook.ttf");
+  src: url("../fonts/GothamBook.ttf") format("truetype"), url("../fonts/GothamBook.woff") format("woff"), url("../fonts/GothamBook.woff2") format("woff2");
 }
 @font-face {
   font-family: "Gotham-Medium";
-  src: url("../fonts/GothamMedium.ttf");
+  src: url("../fonts/GothamMedium_1.ttf") format("truetype"), url("../fonts/GothamMedium_1.woff") format("woff"), url("../fonts/GothamMedium_1.woff2") format("woff2") format("woff2");
 }
 @font-face {
   font-family: "Gotham-Light";
-  src: url("../fonts/GothamLight.ttf");
+  src: url("../fonts/GothamLight.ttf") format("truetype"), url("../fonts/GothamLight.woff") format("woff"), url("../fonts/GothamLight.woff2") format("woff2");
 }
 * {
   box-sizing: border-box;
+}
+@media print {
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 }
 .home-bg,
 .gallery-bg,
@@ -240,6 +246,7 @@ header {
   width: 25%;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  position: relative;
 }
 .hero-button1:hover {
   background: linear-gradient(91.5deg, #a60c25 -5.72%, rgba(142, 12, 33, 0) 111.48%);
@@ -252,11 +259,13 @@ header {
   width: 30%;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  margin: 0 auto;
+  position: relative;
 }
 .hero-button2 {
   background: linear-gradient(91.5deg, #ffffff -5.72%, rgba(0, 0, 0, 0) 111.48%);
   color: white;
-  padding: 0.4rem 0;
+  padding: 0.4rem 1rem;
   border-radius: 15px;
   font-family: "Gotham-Book";
   font-size: 27px;
@@ -268,7 +277,7 @@ header {
 .hero-button2:hover {
   background: linear-gradient(91.5deg, #a60c25 -5.72%, rgba(142, 12, 33, 0) 111.48%);
   color: var(--white);
-  padding: 0.4rem 0;
+  padding: 0.4rem 3rem;
   border-radius: 15px;
   font-family: "Gotham-Book";
   font-size: 27px;
@@ -276,6 +285,8 @@ header {
   width: 30%;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  margin: 0 auto;
+  position: relative;
 }
 /* Home About */
 .home-about {
@@ -482,7 +493,7 @@ header {
   color: var(--white);
   padding: 0.4rem 0;
   border-radius: 18px;
-  font-family: "Gotham-Medium";
+  font-family: "Gotham-Light";
   font-size: 35px;
   border: none;
   width: 30%;
@@ -519,12 +530,12 @@ header {
   .hero-button2 {
     border-radius: 6px;
     font-size: 12px;
-    width: 50%;
+    /* width: 50%; */
   }
   .hero-button2:hover {
     border-radius: 6px;
     font-size: 12px;
-    width: 55%;
+    /* width: 55%; */
   }
   /* Home About */
   .home-about {
@@ -2335,7 +2346,7 @@ header {
   padding: 0.5rem 0;
   border: none;
   border-radius: 10px;
-  font-family: "Gotham-Medium";
+  font-family: "Gotham-Light";
   font-size: 24px;
   width: 60%;
 }
@@ -2748,7 +2759,7 @@ header {
   padding: 0.3rem 0;
   border: none;
   border-radius: 10px;
-  font-family: "Gotham-Medium";
+  font-family: "Gotham-Light";
   font-size: 22px;
   width: 100%;
 }
@@ -2763,7 +2774,7 @@ header {
   color: var(--white);
   padding: 0.4rem 0;
   border-radius: 8px;
-  font-family: "Gotham-Medium";
+  font-family: "Gotham-Light";
   font-size: 23px;
   border: none;
   width: 60%;
